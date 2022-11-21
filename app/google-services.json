@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "696460192076",
+    "project_id": "sie-project-fa896",
+    "storage_bucket": "sie-project-fa896.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696460192076:android:0521bebf7cad72d2f947e9",
+        "android_client_info": {
+          "package_name": "com.example.android_appv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696460192076-e1hr5ld78178qnsh6kd37lq7cjgoipal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi0bJFFtjfdoq_HaD9gerecsWIDRvKWgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696460192076-e1hr5ld78178qnsh6kd37lq7cjgoipal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
