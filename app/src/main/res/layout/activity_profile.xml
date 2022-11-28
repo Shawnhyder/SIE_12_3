@@ -35,41 +35,50 @@
         app:layout_constraintLeft_toLeftOf="parent"
         />
 
+
     <Button
         android:id="@+id/formClub"
         android:layout_width="150dp"
         android:layout_height="70dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="152dp"
         android:backgroundTint="#F58025"
         android:text="Form Club"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="222dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <Button
         android:id="@+id/informationExchange"
         android:layout_width="150dp"
         android:layout_height="70dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="38dp"
         android:backgroundTint="#F58025"
         android:text="Information\nExchange"
-        tools:layout_editor_absoluteX="223dp"
-        tools:layout_editor_absoluteY="222dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
 
     <Button
         android:id="@+id/tutoringServices"
         android:layout_width="150dp"
         android:layout_height="70dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="133dp"
         android:backgroundTint="#F58025"
         android:text="Message"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="425dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formClub" />
 
     <Button
         android:id="@+id/communications"
         android:layout_width="150dp"
         android:layout_height="70dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="133dp"
         android:backgroundTint="#F58025"
         android:text="Tutoring\nservices"
-        tools:layout_editor_absoluteX="223dp"
-        tools:layout_editor_absoluteY="425dp" />
+        app:layout_constraintStart_toEndOf="@+id/tutoringServices"
+        app:layout_constraintTop_toBottomOf="@+id/informationExchange" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
