@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button informationExchange;
+    private Button informationExchange,formClubButton;
 
 
     FirebaseAuth auth;
@@ -26,6 +26,9 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         auth = FirebaseAuth.getInstance();
         informationExchange = (Button) findViewById(R.id.informationExchange);
         informationExchange.setOnClickListener(this);
+
+        formClubButton = (Button) findViewById(R.id.formClub);
+        formClubButton.setOnClickListener(this);
 
 
 
@@ -44,6 +47,10 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             auth.signOut();
             startActivity(new Intent(ProfileActivity.this,MainActivity.class));
         }
+
+        if(item.getItemId() == R.id.viewProfile) {
+            startActivity(new Intent(ProfileActivity.this,ViewProfile.class));
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -52,6 +59,9 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         switch(v.getId()) {
             case R.id.informationExchange:
                 startActivity(new Intent(this,clubhome.class));
+                break;
+            case R.id.formClub:
+                startActivity(new Intent(this,ActualClubHome.class));
         }
     }
 }
