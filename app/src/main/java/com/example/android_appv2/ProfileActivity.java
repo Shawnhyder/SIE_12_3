@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button informationExchange,formClubButton;
+    private Button informationExchange,formClubButton, messageB;
 
 
     FirebaseAuth auth;
@@ -30,6 +30,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         formClubButton = (Button) findViewById(R.id.formClub);
         formClubButton.setOnClickListener(this);
 
+        messageB = (Button) findViewById(R.id.Comms);
+        messageB.setOnClickListener(this);
 
 
     }
@@ -62,6 +64,10 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                 break;
             case R.id.formClub:
                 startActivity(new Intent(this,ActualClubHome.class));
+                break;
+            case R.id.Comms:
+                startActivity(new Intent(this,M.class));
+                break;
         }
     }
 }

@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/banner" />
 
     <Button
-        android:id="@+id/tutoringServices"
+        android:id="@+id/Comms"
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginStart="38dp"
